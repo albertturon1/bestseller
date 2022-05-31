@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900')
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+html, body
+  width: 100%
+  height: 100%
+  font-family: 'Rubik', sans-serif
+body
+  background: white
+  transition: all .5s ease
+  background: white
+//body.main
+  background: white
+//body.place13
+  background: #1f1f1f
+//body.place12
+  background: white
+//body.place11
+  background: #d7363c
+//body.place10
+  background: #ababab
+
+a
+  text-decoration: none
+  color: black
+  display: inline-block
+  cursor: pointer
+
+header
+  background: #c7b330
+  height: 100%
+  width: 100%
+  background: url('../img/opening.jpg') 0% 50% no-repeat
+  background-size: cover
+  position: relative
+  h1
+    color: #e3e60e
+    position: absolute
+    bottom: 50px
+    left: 170px
+    font-size: 86px
+    line-height: 1.2
+    letter-spacing: -2px
+    text-transform: uppercase
+    font-weight: 700
+    text-shadow: 9px 4px rgba(0,0,0,0.4), 12px 4px rgba(0,0,0,0.9)
+nav
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 2
+  display: grid
+  grid-template-rows: repeat(14, 1fr)
+  a
+    line-height: 4
+    height: 100%
+    text-align: center
+    width: 70px
+    transition: all .3s ease
+    background: #FF0000
+  a:hover
+    width: 100px
+
+
+
+
+.list-item
+  max-width: 1200px
+  height: 130%
+  margin-left: 170px
+  display: flex
+  justify-content: center
+  align-items: center
+  .center-me
+    display: flex
+    height: 600px
+    width: 100%
+    .image-box
+      width: 600px
+      height: 100%
+      //background-size: cover
+    .about-box
+      width: 570px
+      margin-left: 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      font-weight: 700
+      text-transform: uppercase
+      h1
+        font-size: 90px
+      h2
+        font-size: 64px
+        line-height: 1.2
+        margin-bottom: 5px
+      h3
+        font-size: 36px
+#place13
+  color: #c43723
+  .image-box
+    background: url('../img/13boston.jpg') 50% 50% no-repeat
+#place12
+  color: #000
+  .image-box
+    background: url('../img/12houston.jpg') 50% 50% no-repeat
+#place11
+  color: #f0a452
+  .image-box
+    background: url('../img/11guns.jpg') 50% 50% no-repeat
+#place10
+  color: #fefefe
+  .image-box
+    background: url('../img/10the_beatles.jpg') 50% 50% no-repeat
+#place9
+  color: #83818e
+  .image-box
+    background: url('../img/9shania.jpg') 50% 50% no-repeat
+#place8
+  color: #090907
+  .image-box
+    background: url('../img/8fleetwood.jpg') 50% 50% no-repeat
+#place7
+  color: #c8c7d7
+  .image-box
+    background: url('../img/7garth_brooks.jpg') 50% 50% no-repeat
+#place6
+  color: #fefefe
+  .image-box
+    background: url('../img/6acdc.jpg') 50% 50% no-repeat
+#place5
+  color: #000
+  .image-box
+    background: url('../img/5pink_floyd.jpg') 50% 50% no-repeat
+#place4
+  color: #64492b
+  .image-box
+    background: url('../img/4led_zeppelin.jpg') 50% 50% no-repeat
+#place3
+  color: #cac4c6
+  .image-box
+    background: url('../img/3billy_joel.jpg') 50% 50% no-repeat
+#place2
+  color: #364353
+  .image-box
+    background: url('../img/2eagles.jpg') 50% 50% no-repeat
+#place1
+  height: 100%
+  color: #020202
+  .image-box
+    background: url('../img/1jackson.jpg') 50% 50% no-repeat
+
+
+@media screen and (max-width: 768px)
+  .list-item
+    max-width: 1200px
+    height: 130%
+    margin-left: 170px
+    display: flex
+    justify-content: center
+    align-items: center
+    .center-me
+      display: flex
+      flex-direction: column
+      height: 600px
+      width: 100%
+      .image-box
+        width: 600px
+        height: 100%
+        //background-size: cover
+      .about-box
+        width: 570px
+        margin-left: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        font-weight: 700
+        text-transform: uppercase
+        h1
+          font-size: 90px
+        h2
+          font-size: 64px
+          line-height: 1.2
+          margin-bottom: 5px
+        h3
+          font-size: 36px
